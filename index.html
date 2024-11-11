@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Sencilla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">MiMarca</div>
+        <nav>
+            <a href="#features">Características</a>
+            <a href="#subscribe">Suscríbete</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <section class="hero">
+        <h1>Bienvenido a MiMarca</h1>
+        <p>Descubre nuestros servicios y productos innovadores</p>
+        <button onclick="scrollToSubscribe()">¡Quiero saber más!</button>
+    </section>
+
+    <!-- Características del Producto -->
+    <section id="features" class="features">
+        <h2>Características</h2>
+        <div class="feature-item">
+            <h3>Alta calidad</h3>
+            <p>Nuestros productos están diseñados con los mejores materiales.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Fácil de usar</h3>
+            <p>Hemos creado una experiencia intuitiva para nuestros usuarios.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Soporte 24/7</h3>
+            <p>Siempre estamos disponibles para ayudarte.</p>
+        </div>
+    </section>
+
+    <!-- Formulario de Suscripción -->
+    <section id="subscribe" class="subscribe">
+        <h2>Suscríbete para más información</h2>
+        <form id="subscribe-form">
+            <input type="email" id="email" placeholder="Ingresa tu correo electrónico" required>
+            <button type="submit">Suscribirse</button>
+        </form>
+        <p id="responseMessage"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
